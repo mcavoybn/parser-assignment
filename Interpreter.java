@@ -12,11 +12,11 @@ public class Interpreter {
 		//cycle through each arg string and pass to the parser
 		for (String stmt: args)
 			try {
-			System.out.println(parser.parse(stmt).eval(env));
+				System.out.println(parser.parse(stmt).eval(env));
 			} catch (SyntaxException e) {
-			System.err.println(e);
+				System.err.println(e);
 			} catch (EvalException e) {
-			System.err.println(e);
+				System.err.println(e);
 			}
 		}
 

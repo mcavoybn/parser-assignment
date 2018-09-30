@@ -4,12 +4,12 @@ public class NodeAssn extends Node {
     private NodeExpr expr;
 
     public NodeAssn(String id, NodeExpr expr) {
-	this.id=id;
-	this.expr=expr;
+        this.id=id;
+        this.expr=expr;
     }
 
     public int eval(Environment env) throws EvalException {
-	return env.put(id,expr.eval(env));
+	    return env.put(id,expr.eval(env));
     }
 
 }

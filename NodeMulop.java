@@ -3,8 +3,8 @@ public class NodeMulop extends Node {
     private String mulop;
 
     public NodeMulop(int pos, String mulop) {
-	this.pos=pos;
-	this.mulop=mulop;
+		this.pos=pos;
+		this.mulop=mulop;
     }
 
     public int op(int o1, int o2) throws EvalException {

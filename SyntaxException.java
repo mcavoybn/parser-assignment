@@ -1,3 +1,4 @@
+//Defines a syntax exception based on the java Exception object 
 public class SyntaxException extends Exception {
 
     private int pos;

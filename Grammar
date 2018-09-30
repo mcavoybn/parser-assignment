@@ -11,3 +11,5 @@ addop : '+'
       | '-'
 mulop : '*'
       | '/'
+neg   : '-' fact
+      : '-' neg

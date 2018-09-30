@@ -1,6 +1,4 @@
-// This class provides a stubbed-out environment.
-// You are expected to implement the methods.
-// Accessing an undefined variable should throw an exception.
+import java.util.HashMap;
 
 // Hint!
 // Use the Java API to implement your Environment.
@@ -15,7 +13,15 @@
 
 public class Environment {
 
-    public int put(String var, int val) { return val; }
-    public int get(int pos, String var) throws EvalException { return 0; }
+    HashMap<String, Integer> map = new HashMap<String, Integer>();
+
+    public int put(String key, int val) {
+        map.put(key, val);
+        return val;
+    }
+    
+    public int get(String key) throws EvalException { 
+        return map.get(key);
+    }
 
 }
